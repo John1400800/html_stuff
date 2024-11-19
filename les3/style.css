@@ -25,11 +25,9 @@ p.green { color: green; text-align: justify;}
 p.orange { color: orange; text-align: center;}
 
 #img1 {
-    display: flex;          /* Используем Flexbox */
-    justify-content: center; /* Центрируем по горизонтали */
-    /*align-items: center;     /* Центрируем по вертикали (если необходимо) */
-    height: 10vh;          /* Высота контейнера */
-    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 h1, h3 {
@@ -75,4 +73,22 @@ body::after {
     background-attachment: fixed;
     opacity:    0.7;
     z-index:    -1;
+}
+
+.moving-text {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 24px;
+    font-weight: bold;
+    animation: moveToCenter 3s ease-out forwards;
+}
+
+@keyframes moveToCenter {
+    from {
+        left: -100%; /* Начинает за пределами экрана слева */
+    }
+    to {
+        left: 50%; /* Останавливается в центре */
+        transform: translateX(-50%); /* Смещает текст, чтобы он был точно по центру */
+    }
 }
