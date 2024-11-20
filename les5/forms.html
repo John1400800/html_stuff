@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <style>
+    input[type="radio"] {
+    display: block;
+    margin-bottom: 10px;
+    }
+  </style>
+  <title>Forms</title>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td>
+        Выберите категорию проекта
+      </td>
+      <td>
+        <form>
+          <select name="category" type="">
+            <option value="townhouses">Проекты таунхаусов и блок домов</option>
+            <option value="two_families">Проекты домов на две семьи</option>
+            <option value="narrow_houses">Проекты узких домов</option>
+          </select>
+        </form>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Выберите материал
+      </td>
+      <td>
+        <form>
+          <select name="material" multiple size="3">
+            <option value="brick">проекты кирпичных домов</option>
+            <option value="gas_block">проекты домов из газоблоков</option>
+            <option value="beams">проекты из бревен</option>
+            <option value="frame">каркасных домов</option>
+          </select>
+        </form>
+      </td>
+    </tr>
+    <tr>
+      <td>
+<input type="radio" name="modem" value="9600" checked /> 9600 бит/с
+<input type="radio" name="modem" value="14400" /> 14400 бит/с
+<input type="radio" name="modem" value="28800" /> 28800 >бит/с
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
