@@ -31,12 +31,12 @@ p.orange { color: orange; text-align: center;}
 }
 
 h1, h3 {
-    color:      #0000ff;
+    color:      #FF0066;
 }
 
 h2 {
     text-align: right;
-    color:      #800000;
+    color:      #6600FF;
     font-size:  16pt;
 }
 
@@ -68,7 +68,7 @@ body::after {
     content:    '';
     position:   fixed;
     inset:      0;
-    background-image: url('../data/fon9.jpg');
+    background-image: url('../data/fon3.jpg');
     background-size: 30vh 30vh;
     background-attachment: fixed;
     opacity:    0.7;
@@ -78,7 +78,7 @@ body::after {
 .moving-text {
     position: absolute;
     white-space: nowrap;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     animation: moveToCenter 3s ease-out forwards;
 }

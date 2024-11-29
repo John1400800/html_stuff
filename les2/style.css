@@ -45,10 +45,17 @@ li {
     position:   relative;
 }
 
+ul {
+  list-style: none; /* Disable the default list styling */
+  padding-left: 20px; /* Adjust for custom bullet placement */
+}
+
 ul li {
-    list-style-type:    none;
-    list-style-image: url('../data/spisok_1.gif');
-    padding-left:       0;
+  background-image: url('../data/bullet-point.png');
+  background-size: 16px 16px; /* Resize the image */
+  background-repeat: no-repeat;
+  background-position: 0 50%; /* Align image to the center of the line */
+  padding-left: 24px; /* Add space between the image and the text */
 }
 
 body {
@@ -62,7 +69,7 @@ body::after {
     content:    '';
     position:   fixed;
     inset:      0;
-    background-image: url('../data/fon9.jpg');
+    background-image: url('../data/fon10.jpg');
     background-size: 30vh 30vh;
     background-attachment: fixed;
     opacity:    0.7;
