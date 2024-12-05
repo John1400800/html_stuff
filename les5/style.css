@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdf5d4; /* светлый фон */
+  margin: 20px;
+  color: #333;
+}
+
+h2 {
+  color: #1d3c6a; /* темно-синий текст */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Убирает двойные линии между ячейками */
+}
+
+td, th {
+  border: 1px solid #000; /* Черная граница вокруг каждой ячейки */
+  padding: 10px; /* Отступ внутри ячеек */
+  text-align: left; /* Выравнивание текста влево */
+}
+
+form {
+  display: block;
+}
+
+input, textarea, select, button {
+  width: 90%;
+  margin: 5px 0;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="radio"], label {
+  width: auto;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  width: auto;
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #1d3c6a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #174076;
+}
+
+span {
+  color: red; /* звёздочки */
+}
+
+a {
+  color: #1d3c6a;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #174076;
+}
