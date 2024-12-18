@@ -1,70 +1,86 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fdf5d4; /* светлый фон */
-  margin: 20px;
-  color: #333;
+    margin-left: 1em;
+    margin-right: 1em;
+    position: relative;
+    height: 100vh;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("../data/fon10.jpg");
+    background-size: 30vh 30vh;
+    background-attachment: fixed;
+    opacity: 0.7;
+    z-index: -1;
 }
 
 h2 {
-  color: #1d3c6a; /* темно-синий текст */
+    color: #1d3c6a; /* темно-синий текст */
 }
 
 table {
-  width: 100%;
-  border-collapse: collapse; /* Убирает двойные линии между ячейками */
+    width: 100%;
+    border-collapse: collapse; /* Убирает двойные линии между ячейками */
 }
 
-td, th {
-  border: 1px solid #000; /* Черная граница вокруг каждой ячейки */
-  padding: 10px; /* Отступ внутри ячеек */
-  text-align: left; /* Выравнивание текста влево */
+td,
+th {
+    border: 1px solid #000; /* Черная граница вокруг каждой ячейки */
+    padding: 10px; /* Отступ внутри ячеек */
+    text-align: left; /* Выравнивание текста влево */
 }
 
 form {
-  display: block;
+    display: block;
 }
 
-input, textarea, select, button {
-  width: 90%;
-  margin: 5px 0;
-  padding: 5px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+input,
+textarea,
+select,
+button {
+    width: 90%;
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-input[type="radio"], label {
-  width: auto;
+input[type="radio"],
+label {
+    width: auto;
 }
 
 textarea {
-  resize: none;
+    resize: none;
 }
 
 button {
-  width: auto;
-  padding: 5px 10px;
-  font-size: 14px;
-  background-color: #1d3c6a;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    width: auto;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #1d3c6a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
-  background-color: #174076;
+    background-color: #174076;
 }
 
 span {
-  color: red; /* звёздочки */
+    color: red; /* звёздочки */
 }
 
 a {
-  color: #1d3c6a;
-  text-decoration: underline;
+    color: #1d3c6a;
+    text-decoration: underline;
 }
 
 a:hover {
-  color: #174076;
+    color: #174076;
 }
