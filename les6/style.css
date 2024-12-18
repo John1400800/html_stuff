@@ -10,7 +10,7 @@ table {
 .schedule {
     border-collapse: separate;
     border-spacing: 2px;
-    background-image: linear-gradient(to bottom, magenta, mediumslateblue);
+    background-image: linear-gradient(to bottom, magenta, purple);
 }
 
 .schedule th,
@@ -30,7 +30,8 @@ th,
 }
 
 .even-week {
-    background-image: linear-gradient(to bottom, mediumslateblue, magenta);
+    /* color: purple; */
+    background-image: linear-gradient(to bottom, purple, magenta);
 }
 
 td {
@@ -43,5 +44,5 @@ caption {
 
 marquee {
     font-weight: bold;
-    background-image: linear-gradient(to bottom, mediumslateblue, magenta);
+    background-image: linear-gradient(to bottom, purple, magenta);
 }
