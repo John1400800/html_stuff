@@ -3,24 +3,34 @@ table {
     margin-bottom: 2em;
 }
 
+.schedule caption {
+    color: magenta;
+}
+
 .schedule {
     border-collapse: separate;
     border-spacing: 2px;
-    background-color: lightgreen;
+    background-image: linear-gradient(to bottom, magenta, mediumslateblue);
+}
+
+.schedule th,
+.schedule marquee {
+    color: pink;
 }
 
 th,
 .schedule td {
-    border: 1px solid lightslategray;
-    background-color: white;
+    border: 1px solid mediumslateblue;
+    background-color: pink;
+    color: mediumblue;
 }
 
 .odd-week {
-    background-image: linear-gradient(to bottom, lightsalmon, white);
+    background-image: linear-gradient(to bottom, mediumslateblue, magenta);
 }
 
 .even-week {
-    background-image: linear-gradient(to bottom, lightskyblue, white);
+    background-image: linear-gradient(to bottom, mediumslateblue, magenta);
 }
 
 td {
@@ -32,6 +42,6 @@ caption {
 }
 
 marquee {
-    background-color: lightyellow;
-    background-image: linear-gradient(to bottom, lightgreen, white);
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, mediumslateblue, magenta);
 }
