@@ -5,12 +5,46 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css" type="text/css">
   <title>Forms</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.querySelector("form[action='#']");
+      const resetButton = document.querySelector("button[type='reset']");
+      const submitButton = document.querySelector("button[type='submit']");
+
+      // Проверка обязательных полей
+      submitButton.addEventListener("click", (event) => {
+        event.preventDefault(); // Предотвращаем отправку формы
+
+        const requiredFields = form.querySelectorAll("[required]");
+        let allFieldsValid = true;
+
+        requiredFields.forEach((field) => {
+          if (!field.value.trim()) {
+            allFieldsValid = false;
+            alert(`Поле "${field.previousElementSibling.textContent.trim()}" обязательно для заполнения!`);
+          }
+        });
+
+        if (allFieldsValid) {
+          alert("Форма успешно отправлена!");
+          form.reset();
+        }
+      });
+
+      // Очистка формы при нажатии "Сбросить"
+      resetButton.addEventListener("click", () => {
+        if (confirm("Вы уверены, что хотите сбросить форму?")) {
+          form.reset();
+        }
+      });
+    });
+  </script>
 </head>
 
 <body>
   <table>
     <h2>Заказ проекта</h2>
-    <p>Вы можете послать письмо на наш електронный адрес</p>
+    <p>Вы можете послать письмо на наш электронный адрес</p>
     <a href="mailto:foo@mail.com">Послать письмо</a>
     <p>Здесь вы можете заполнить форму для покупки проекта<br>Поля со<span style="color: red;">*</span> обязательны для заполнения</p>
     <tr>
@@ -92,15 +126,9 @@
           <label for="address">Адрес <span style="color: red;">*</span></label><br>
           <textarea id="address" name="address" placeholder="Введите ваш адрес" rows="4" required></textarea><br><br>
 
-        </form>
-      </td>
-    </tr>
-    <tr>
-      <td>
-      </td>
-      <td>
           <button type="submit">Отправить</button>
           <button type="reset">Сбросить</button>
+        </form>
       </td>
     </tr>
   </table>
