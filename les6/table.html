@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Таблицы</title>
+  </head>
+
+  <bpdy>
+    <table border="1">
+      <caption>
+        Заголовок таблицы
+      </caption>
+      <tr>
+        <td>Ячейка 1</td>
+        <td>Ячейка 2</td>
+      </tr>
+      <tr>
+        <td>Ячейка 3</td>
+        <td>Ячейка 4</td>
+      </tr>
+    </table>
+
+    <table border="1">
+      <caption>
+        Объеденение столбцов
+      </caption>
+      <tr>
+        <td>Ячейка 1</td>
+        <td colspan="2">Ячейка 2</td>
+      </tr>
+      <tr>
+        <td>Ячейка 4</td>
+        <td>Ячейка 5</td>
+        <td>Ячейка 6</td>
+      </tr>
+    </table>
+
+    <table border="1">
+      <caption>
+        Объеденение строк
+      </caption>
+      <tr>
+        <td>Ячейка 1</td>
+        <td>Ячейка 2</td>
+        <td>Ячейка 3</td>
+      </tr>
+      <tr>
+        <td>Ячейка 4</td>
+        <td rowspan="2">Ячейка 5</td>
+        <td>Ячейка 6</td>
+      </tr>
+      <tr>
+        <td>Ячейка 7</td>
+        <td>Ячейка 9</td>
+      </tr>
+    </table>
+
+    <table border="1">
+      <tr>
+        <td rowspan="2" colspan="2"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="2"></td>
+        <td></td>
+        <td rowspan="2"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+  </bpdy>
+</html>
