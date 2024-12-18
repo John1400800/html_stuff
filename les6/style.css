@@ -3,10 +3,35 @@ table {
     margin-bottom: 2em;
 }
 
+.schedule {
+    border-collapse: separate;
+    border-spacing: 2px;
+    background-color: lightgreen;
+}
+
+th,
+.schedule td {
+    border: 1px solid lightslategray;
+    background-color: white;
+}
+
+.odd-week {
+    background-image: linear-gradient(to bottom, white, lightsalmon);
+}
+
+.even-week {
+    background-image: linear-gradient(to bottom, white, lightskyblue);
+}
+
 td {
     height: 1em;
 }
 
 caption {
     font-weight: bold;
+}
+
+marquee {
+    background-color: lightyellow;
+    background-image: linear-gradient(to bottom, white, lightyellow);
 }
