@@ -10,28 +10,55 @@
         font-size: 18pt;
       }
       #container {
+        position: relative;
         width: 75%;
+        height: 620px;
         margin: 0 auto;
+      }
+      #top {
+        background-color: skyblue;
+        width: 100%;
+        height: 15%;
+      }
+      #left-bar {
+        background-color: lightgreen;
+        width: 10em;
+        height: 75%;
+        float: left;
+      }
+      #main {
+        background-color: pink;
+        margin-right: 10em;
+        height: 75%;
+      }
+      #right-bar {
+        position: absolute;
+        top: 15%;
+        right: 0;
+        background-color: lightgreen;
+        width: 10em;
+        height: 75%;
+        float: right;
+      }
+      #footer {
+        background-color: lightsalmon;
+        width: 100%;
+        height: 10%;
       }
     </style>
   </head>
   <body>
     <div id="container">
       <div id="top">
-        Щапка сайта резиновая равна ширине контэйнера и 75% от ширины экрана
+        Шапка сайта резиновая равна ширине контэйнера и 75% от ширины экрана
       </div>
-      <div id="left-bar">
-        Левая колонка резиновая шириной 20% от ширины контэйнера
-      </div>
+      <div id="left-bar">Левая колонка резиновая шириной 10em</div>
       <div id="main">
-        Центральная колонка резиновая шириной 55% от ширины контэйнера
+        Центральная колонка резиновая зависит от ширины оставшегося места на
+        экране
       </div>
-      <div id="right-bar">
-        Правая колонка резиновая шириной 25% от ширины контэйнера
-      </div>
-      <div id="footer">
-        Подвал сайта резигновый шириной 75% от ширины контэйнера
-      </div>
+      <div id="right-bar">Правая колонка резиновая шириной 10em</div>
+      <div id="footer">Подвал сайта резиновый шириной 75% от ширины экрана</div>
     </div>
   </body>
 </html>
