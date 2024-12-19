@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Каталог проектов</title>
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-size: 14pt;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+      margin-bottom: 0.5em;
+    }
+    h2 {
+      font-size: 16pt;
+    }
+    h1,
+    h2,
+    p {
+      color: purple;
+    }
+    ol,
+    ul {
+      margin-bottom: 1em;
+    }
+    #container {
+      position: relative;
+      background-color: lightgray;
+      width: 100%;
+      height: 100vh;
+    }
+    #header {
+      background-color: darkgray;
+      background-image: url("../data/shapka_div.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 200px;
+    }
+    #bar {
+      background-color: powderblue;
+      box-sizing: border-box;
+      width: 310px;
+      padding-left: 0.4em;
+      padding-right: 0.4em;
+      padding-top: 0.4em;
+      height: 100%;
+      flex: left;
+    }
+    #main {
+      position: absolute;
+      top: 200px;
+      right: 0;
+      left: 310px;
+      box-sizing: border-box;
+      padding: 0.4em;
+      background-color: yellowgreen;
+      background-image: url("../data/fon9.jpg");
+      background-size: 16vh;
+      background-attachment: fixed;
+      height: 100%;
+    }
+    .image {
+      position: absolute;
+      width: 200px;
+      height: 120px;
+      border: 4px solid lightsteelblue;
+    }
+    .image1 {
+      top: 450px;
+      left: 100px;
+    }
+    .image2 {
+      top: 500px;
+      left: 250px;
+    }
+    .image3 {
+      top: 550px;
+      left: 400px;
+    }
+    .image4 {
+      top: 600px;
+      left: 550px;
+    }
+    #blue {
+      color: #0000cc;
+    }
+
+    #blue_2 {
+      color: #3366ff;
+    }
+
+    #brown {
+      color: #996633;
+    }
+
+    #brown_2 {
+      color: #cc6600;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header"></div>
+      <div id="bar">
+        <img src="../data/logo_myhouse.gif" alt="img" />
+        <h4 id="blue">Категории проектов</h4>
+        <ol id="blue_2">
+          <li>
+            <a href="../les4/townhouse.html" target="main"
+            >Проекты таунхаусов и блокированных домов</a
+            >
+          </li>
+          <li>Проекты домов на две семьи</li>
+          <li>Проекты узких домов</li>
+          <li>Проекты бань</li>
+        </ol>
+
+        <h4 id="blue">Каталог архитектурных проектов</h4>
+        <ul id="blue_2">
+          <li>Проекты кирпичных домов</li>
+          <li>Проекты домов из газобетона и пенобетона</li>
+          <li>Проекты домов из бруса и бревна</li>
+          <li>Проекты каркасных домов</li>
+        </ul>
+
+        <h4 id="brown">Площади домов</h4>
+        <ul id="brown_2">
+          <li>до 150 м<sup>2</sup></li>
+          <li>от 150 до 250 м<sup>2</sup></li>
+          <li>от 250 до 400 м<sup>2</sup></li>
+          <li>от 400 м<sup>2</sup></li>
+        </ul>
+      </div>
+      <div id="main">
+        <h1>Каталог архитектурных проектов</h1>
+        <h2>Проекты для вашего будущего доиа</h2>
+        <p>
+          Каталог готовых архитектурных проектов коттеджей myhouse.ru явился
+          результатом многолетней работы лучших российских специалистов в
+          области архитектуры и строительства. Это своего рода «Собрание
+          сочинений» от современной загородной архитектуры, в котором каждый
+          может найти что-то свое. Проекты коттеджей из каталога нельзя называть
+          типовыми, поскольку разрабатывались они в порядке индивидуального
+          проектирования непосредственно под нужды будущих владельцев загородных
+          домов.Более 95% проектов реализовано в строительстве. Большая часть
+          проектов реализована неоднократно, как в Московской области, так и по
+          всей территории Российской Федерации, в странах ближнего зарубежья.
+          Экономическая составляющая и вопросы престижа не менее важны при
+          выборе проекта дома. Разброс проектных площадей - велик. В настоящее
+          время это дома от 50 до 1300 м2 общей площади. Часть из них можно
+          отнести к дачам, в то время, как другую, смело причислить к образцам
+          великолепной дворцовой архитектуры. Разумеется, средние по размерам
+          проекты представлены наиболее полно и отражают все тенденции в
+          современном коттеджном строительстве.
+        </p>
+            <img src="../data/house1.jpg" alt="Изображение 1" class="image image1">
+            <img src="../data/house2.jpg" alt="Изображение 2" class="image image2">
+            <img src="../data/house3.jpg" alt="Изображение 3" class="image image3">
+            <img src="../data/house4.jpg" alt="Изображение 4" class="image image4">
+      </div>
+  </body>
+</html>
