@@ -1,75 +1,108 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fdf5d4; /* светлый фон */
-    margin: 20px;
-    color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6; /* Мягкий серо-голубой фон */
+  margin: 20px;
+  color: #2c3e50; /* Темный текст для лучшей читабельности */
 }
 
 h2 {
-    color: #1d3c6a; /* темно-синий текст */
+  color: #34495e; /* Умеренно темно-синий */
+  font-size: 1.8em;
+  font-weight: 600;
+  border-bottom: 2px solid #1abc9c; /* Линия снизу для акцента */
+  padding-bottom: 10px;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse; /* Убирает двойные линии между ячейками */
+  width: 100%;
+  border-collapse: collapse; /* Убирает двойные линии между ячейками */
+  margin-top: 15px;
 }
 
 td,
 th {
-    border: 1px solid #000; /* Черная граница вокруг каждой ячейки */
-    padding: 10px; /* Отступ внутри ячеек */
-    text-align: left; /* Выравнивание текста влево */
+  border: 1px solid #ecf0f1; /* Светло-серая граница */
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 16px;
+  color: #34495e;
+}
+
+th {
+  background-color: #1abc9c; /* Приятный зеленоватый фон для заголовков */
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #ecf0f1; /* Чередование фона строк для лучшей читаемости */
 }
 
 form {
-    display: block;
+  display: block;
+  margin-top: 20px;
 }
 
 input,
 textarea,
 select,
 button {
-    width: 90%;
-    margin: 5px 0;
-    padding: 5px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #bdc3c7; /* Тонкая граница */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  color: #2c3e50;
+  transition:
+    border-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #1abc9c;
+  box-shadow: 0 0 8px rgba(26, 188, 156, 0.4);
 }
 
 input[type="radio"],
 label {
-    width: auto;
+  width: auto;
+  margin-right: 10px;
 }
 
 textarea {
-    resize: none;
+  resize: vertical;
 }
 
 button {
-    width: auto;
-    padding: 5px 10px;
-    font-size: 14px;
-    background-color: #1d3c6a;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  width: auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #174076;
+  background-color: #16a085;
 }
 
 span {
-    color: red; /* звёздочки */
+  color: #e74c3c; /* Красный цвет для ошибок или звездочек */
 }
 
 a {
-    color: #1d3c6a;
-    text-decoration: underline;
+  color: #1abc9c;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 a:hover {
-    color: #174076;
+  color: #16a085;
+  text-decoration: underline;
 }
