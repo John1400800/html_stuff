@@ -1,37 +1,48 @@
 table {
-    width: 80%;
-    margin-bottom: 2em;
+  width: 80%;
+  margin-bottom: 2em;
+}
+
+.schedule caption {
+  color: magenta;
 }
 
 .schedule {
-    border-collapse: separate;
-    border-spacing: 2px;
-    background-color: lightgreen;
+  border-collapse: separate;
+  border-spacing: 2px;
+  background-image: linear-gradient(to bottom, magenta, purple);
+}
+
+.schedule th,
+.schedule marquee {
+  color: pink;
 }
 
 th,
 .schedule td {
-    border: 1px solid lightslategray;
-    background-color: white;
+  border: 1px solid mediumslateblue;
+  background-color: pink;
+  color: mediumblue;
 }
 
 .odd-week {
-    background-image: linear-gradient(to bottom, lightsalmon, white);
+  background-image: linear-gradient(to bottom, mediumslateblue, magenta);
 }
 
 .even-week {
-    background-image: linear-gradient(to bottom, lightskyblue, white);
+  /* color: purple; */
+  background-image: linear-gradient(to bottom, purple, magenta);
 }
 
 td {
-    height: 1em;
+  height: 1em;
 }
 
 caption {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 marquee {
-    background-color: lightyellow;
-    background-image: linear-gradient(to bottom, lightyellow, white);
+  font-weight: bold;
+  background-image: linear-gradient(to bottom, purple, magenta);
 }
