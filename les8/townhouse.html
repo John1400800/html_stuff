@@ -1,99 +1,149 @@
 <!doctype html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Каталог проектов</title>
     <style>
       * {
         margin: 0;
         padding: 0;
-        font-size: 14pt;
+        font-family: "Arial", sans-serif;
         box-sizing: border-box;
       }
+
+      body {
+        background-color: #f0f2f5;
+        color: #333;
+        font-size: 1rem;
+      }
+
       h1,
       h2,
       h3,
       h4 {
         margin-bottom: 0.5em;
+        font-weight: 600;
       }
+
+      h1 {
+        font-size: 2rem;
+        color: #2c3e50;
+      }
+
       h2 {
-        font-size: 16pt;
+        font-size: 1.5rem;
+        color: #2980b9;
       }
-      h1,
-      h2,
+
       p {
-        color: purple;
+        color: #7f8c8d;
+        line-height: 1.6;
       }
+
       ol,
       ul {
         margin-bottom: 1em;
+        list-style-type: none;
       }
+
+      a {
+        text-decoration: none;
+        color: #3498db;
+        transition: color 0.3s ease;
+      }
+
+      a:hover {
+        color: #1abc9c;
+      }
+
       #container {
-        position: relative;
-        background-color: lightgray;
-        width: 100%;
-        height: 100vh;
         display: flex;
         flex-direction: column;
+        min-height: 100vh;
       }
+
       #header {
-        background-color: darkgray;
+        background: linear-gradient(to bottom, #2980b9, #6dd5ed);
+        width: 100%;
+        height: 200px;
         background-image: url("../data/shapka_div.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        width: 100%;
-        height: 200px;
       }
+
       #content {
         display: flex;
         flex-grow: 1;
       }
+
       #bar {
-        background-color: powderblue;
+        background-color: #ecf0f1;
         width: 310px;
-        padding: 0.4em;
+        padding: 1rem;
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        gap: 1.5rem;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
       }
+
       #main {
         flex-grow: 1;
-        padding: 0.4em;
-        background-color: yellowgreen;
+        padding: 1.5rem;
+        background-color: #ffffff;
         background-image: url("../data/fon9.jpg");
-        background-size: 16vh;
+        background-size: cover;
         background-attachment: fixed;
         overflow-y: auto;
-        display: flex;
-        flex-direction: column;
       }
+
       .projects {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 1em;
-        margin-top: 1em;
+        gap: 1.5rem;
+        margin-top: 2rem;
       }
+
       .project-card {
-        background-color: white;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 1em;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
       }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
       .project-card img {
         max-width: 100%;
-        border-radius: 5px;
-        margin-bottom: 1em;
+        border-radius: 8px;
+        margin-bottom: 1rem;
       }
+
       .bottom {
-        background: #dadada;
+        background: #f7f7f7;
+        padding: 1rem;
+        border-radius: 5px;
       }
+
       .project-details p {
-        margin: 0.5em 0;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        color: #7f8c8d;
+      }
+
+      .project-details strong {
+        color: #34495e;
       }
     </style>
   </head>
@@ -102,8 +152,8 @@
       <div id="header"></div>
       <div id="content">
         <div id="bar">
-          <a href="task05.html">
-            <img src="../data/logo_myhouse.gif" alt="img" />
+          <a href="task.html">
+            <img src="../data/logo_myhouse.gif" alt="Логотип MyHouse" />
           </a>
           <h4>Категории проектов</h4>
           <ol>
@@ -133,7 +183,7 @@
           </p>
           <div class="projects">
             <div class="project-card">
-              <img src="../data/house1.jpg" alt="b-213-1p" />
+              <img src="../data/house1.jpg" alt="Проект D-152-1D" />
               <div class="project-details">
                 <p><strong>Проект D-152-1D</strong></p>
                 <p>Архитектурный проект дома из бруса.</p>
@@ -145,7 +195,7 @@
               </div>
             </div>
             <div class="project-card">
-              <img src="../data/house2.jpg" alt="d-152-1d" />
+              <img src="../data/house2.jpg" alt="Проект H-173-1P" />
               <div class="project-details">
                 <p><strong>Проект H-173-1P</strong></p>
                 <p>Дом двухэтажный, с двускатной кровлей.</p>
@@ -157,7 +207,7 @@
               </div>
             </div>
             <div class="project-card">
-              <img src="../data/house3.jpg" alt="h-173-1p" />
+              <img src="../data/house3.jpg" alt="Проект R-189-1P" />
               <div class="project-details">
                 <p><strong>Проект R-189-1P</strong></p>
                 <p>Удобный коттедж для небольшой семьи.</p>
@@ -169,19 +219,7 @@
               </div>
             </div>
             <div class="project-card">
-              <img src="../data/house4.jpg" alt="d-152-1d" />
-              <div class="project-details">
-                <p><strong>Проект H-173-1P</strong></p>
-                <p>Дом двухэтажный, с двускатной кровлей.</p>
-                <div class="bottom">
-                  <p>Площадь: 173.2 м²</p>
-                  <p>Габариты: 12600x8400</p>
-                  <p>Стены: пенобетон</p>
-                </div>
-              </div>
-            </div>
-            <div class="project-card">
-              <img src="../data/house5.jpg" alt="h-173-1p" />
+              <img src="../data/house4.jpg" alt="Проект R-189-1P" />
               <div class="project-details">
                 <p><strong>Проект R-189-1P</strong></p>
                 <p>Удобный коттедж для небольшой семьи.</p>
@@ -193,7 +231,31 @@
               </div>
             </div>
             <div class="project-card">
-              <img src="../data/house6.jpg" alt="h-173-1p" />
+              <img src="../data/house5.jpg" alt="Проект R-189-1P" />
+              <div class="project-details">
+                <p><strong>Проект R-189-1P</strong></p>
+                <p>Удобный коттедж для небольшой семьи.</p>
+                <div class="bottom">
+                  <p>Площадь: 189 м²</p>
+                  <p>Габариты: 12000x13000</p>
+                  <p>Стены: пенобетон</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="../data/house6.jpg" alt="Проект R-189-1P" />
+              <div class="project-details">
+                <p><strong>Проект R-189-1P</strong></p>
+                <p>Удобный коттедж для небольшой семьи.</p>
+                <div class="bottom">
+                  <p>Площадь: 189 м²</p>
+                  <p>Габариты: 12000x13000</p>
+                  <p>Стены: пенобетон</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="../data/house7.jpg" alt="Проект R-189-1P" />
               <div class="project-details">
                 <p><strong>Проект R-189-1P</strong></p>
                 <p>Удобный коттедж для небольшой семьи.</p>
