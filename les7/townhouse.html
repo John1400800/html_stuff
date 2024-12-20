@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Каталог проектов</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: 14pt;
+        box-sizing: border-box;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        margin-bottom: 0.5em;
+      }
+      h2 {
+        font-size: 16pt;
+      }
+      h1,
+      h2,
+      p {
+        color: purple;
+      }
+      ol,
+      ul {
+        margin-bottom: 1em;
+      }
+      #container {
+        position: relative;
+        background-color: lightgray;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      #header {
+        background-color: darkgray;
+        background-image: url("../data/shapka_div.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 200px;
+      }
+      #content {
+        display: flex;
+        flex-grow: 1;
+      }
+      #bar {
+        background-color: powderblue;
+        width: 310px;
+        padding: 0.4em;
+      }
+      #main {
+        flex-grow: 1;
+        padding: 0.4em;
+        background-color: yellowgreen;
+        background-image: url("../data/fon9.jpg");
+        background-size: 16vh;
+        background-attachment: fixed;
+        overflow-y: auto;
+      }
+      .projects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        margin-top: 1em;
+      }
+      .project-card {
+        position: relative;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 1em;
+        width: calc(33.333% - 1em);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .project-card img {
+        max-width: 100%;
+        border-radius: 5px;
+      }
+      .bottom {
+        background: #dadada;
+      }
+      .project-details p {
+        margin: 0.5em 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header"></div>
+      <div id="content">
+        <div id="bar">
+          <a href="task05.html">
+            <img src="../data/logo_myhouse.gif" alt="img" />
+          </a>
+          <h4>Категории проектов</h4>
+          <ol>
+            <li>
+              <a href="townhouse.html" target="main"
+                >Проекты таунхаусов и блокированных домов</a
+              >
+            </li>
+            <li>Проекты домов на две семьи</li>
+            <li>Проекты узких домов</li>
+            <li>Проекты бань</li>
+          </ol>
+          <h4>Каталог архитектурных проектов</h4>
+          <ul>
+            <li>Проекты кирпичных домов</li>
+            <li>Проекты домов из газобетона и пенобетона</li>
+            <li>Проекты домов из бруса и бревна</li>
+            <li>Проекты каркасных домов</li>
+          </ul>
+        </div>
+        <div id="main">
+          <h2>Проекты таунхаусов и блокированных домов</h2>
+          <p>
+            В данном разделе каталога проектов загородных домов размещена
+            выборка архитектурных проектов таунхаусов, домов с возможностью
+            пристройки, блокировки.
+          </p>
+          <div class="projects">
+            <div class="project-card">
+              <img src="../data/house1.jpg" alt="b-213-1p" />
+              <div class="project-details">
+                <p><strong>Проект D-152-1D</strong></p>
+                <p>Архитектурный проект дома из бруса.</p>
+                <div class="bottom">
+                  <p>Площадь: 154.5 м²</p>
+                  <p>Габариты: 11000x9800</p>
+                  <p>Стены: дерево</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="../data/house2.jpg" alt="d-152-1d" />
+              <div class="project-details">
+                <p><strong>Проект H-173-1P</strong></p>
+                <p>Дом двухэтажный, с двускатной кровлей.</p>
+                <div class="bottom">
+                  <p>Площадь: 173.2 м²</p>
+                  <p>Габариты: 12600x8400</p>
+                  <p>Стены: пенобетон</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="../data/house3.jpg" alt="h-173-1p" />
+              <div class="project-details">
+                <p><strong>Проект R-189-1P</strong></p>
+                <p>Удобный коттедж для небольшой семьи.</p>
+                <div class="bottom">
+                  <p>Площадь: 189 м²</p>
+                  <p>Габариты: 12000x13000</p>
+                  <p>Стены: пенобетон</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="../data/house4.jpg" alt="d-152-1d" />
+              <div class="project-details">
+                <p><strong>Проект H-173-1P</strong></p>
+                <p>Дом двухэтажный, с двускатной кровлей.</p>
+                <div class="bottom">
+                  <p>Площадь: 173.2 м²</p>
+                  <p>Габариты: 12600x8400</p>
+                  <p>Стены: пенобетон</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="../data/house5.jpg" alt="h-173-1p" />
+              <div class="project-details">
+                <p><strong>Проект R-189-1P</strong></p>
+                <p>Удобный коттедж для небольшой семьи.</p>
+                <div class="bottom">
+                  <p>Площадь: 189 м²</p>
+                  <p>Габариты: 12000x13000</p>
+                  <p>Стены: пенобетон</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="../data/house6.jpg" alt="h-173-1p" />
+              <div class="project-details">
+                <p><strong>Проект R-189-1P</strong></p>
+                <p>Удобный коттедж для небольшой семьи.</p>
+                <div class="bottom">
+                  <p>Площадь: 189 м²</p>
+                  <p>Габариты: 12000x13000</p>
+                  <p>Стены: пенобетон</p>
+                </div>
+              </div>
+            </div>
+            <!-- Добавьте остальные карточки проектов аналогично -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

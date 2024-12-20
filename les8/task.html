@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог проектов</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: 14pt;
+        box-sizing: border-box;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        margin-bottom: 0.5em;
+      }
+
+      h2 {
+        font-size: 16pt;
+      }
+
+      h1,
+      h2,
+      p {
+        color: purple;
+      }
+
+      ol,
+      ul {
+        margin-bottom: 1em;
+      }
+
+      #container {
+        display: flex;
+        flex-direction: column;
+        background-color: lightgray;
+        width: 100%;
+        height: 100vh;
+      }
+
+      #header {
+        background-color: darkgray;
+        background-image: url("../data/shapka_div.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 200px;
+      }
+
+      #content {
+        display: flex;
+        flex: 1;
+      }
+
+      #bar {
+        background-color: powderblue;
+        width: 310px;
+        padding: 0.4em;
+      }
+
+      #main {
+        flex: 1;
+        padding: 0.4em;
+        background-color: yellowgreen;
+        background-image: url("../data/fon9.jpg");
+        background-size: 16vh;
+        background-attachment: fixed;
+        overflow-y: auto;
+      }
+
+      .staircase {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 1em;
+      }
+
+      .staircase img {
+        width: 200px;
+        height: 120px;
+        border: 4px solid lightsteelblue;
+      }
+
+      .staircase img:nth-child(1) {
+        margin-left: 0;
+      }
+
+      .staircase img:nth-child(2) {
+        margin-left: 20px;
+      }
+
+      .staircase img:nth-child(3) {
+        margin-left: 40px;
+      }
+
+      .staircase img:nth-child(4) {
+        margin-left: 60px;
+      }
+
+      .staircase img:nth-child(5) {
+        margin-left: 80px;
+      }
+
+      .staircase img:nth-child(6) {
+        margin-left: 100px;
+      }
+
+      .staircase img:nth-child(7) {
+        margin-left: 120px;
+      }
+
+      .staircase img:nth-child(8) {
+        margin-left: 140px;
+      }
+
+      ul,
+      ol {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: #0000cc;
+      }
+
+      a:hover {
+        color: #3366ff;
+      }
+
+      #blue {
+        color: #0000cc;
+      }
+
+      #blue_2 {
+        color: #3366ff;
+      }
+
+      #brown {
+        color: #996633;
+      }
+
+      #brown_2 {
+        color: #cc6600;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header"></div>
+      <div id="content">
+        <div id="bar">
+          <img src="../data/logo_myhouse.gif" alt="Логотип MyHouse" />
+          <h4 id="blue">Категории проектов</h4>
+          <ol id="blue_2">
+            <li>
+              <a href="townhouse.html" target="main"
+                >Проекты таунхаусов и блокированных домов</a
+              >
+            </li>
+            <li>Проекты домов на две семьи</li>
+            <li>Проекты узких домов</li>
+            <li>Проекты бань</li>
+          </ol>
+          <h4 id="blue">Каталог архитектурных проектов</h4>
+          <ul id="blue_2">
+            <li>Проекты кирпичных домов</li>
+            <li>Проекты домов из газобетона и пенобетона</li>
+            <li>Проекты домов из бруса и бревна</li>
+            <li>Проекты каркасных домов</li>
+          </ul>
+          <h4 id="brown">Площади домов</h4>
+          <ul id="brown_2">
+            <li>до 150 м<sup>2</sup></li>
+            <li>от 150 до 250 м<sup>2</sup></li>
+            <li>от 250 до 400 м<sup>2</sup></li>
+            <li>от 400 м<sup>2</sup></li>
+          </ul>
+        </div>
+        <div id="main">
+          <h1>Каталог архитектурных проектов</h1>
+          <h2>Проекты для вашего будущего дома</h2>
+          <p>
+            Каталог готовых архитектурных проектов коттеджей myhouse.ru явился
+            результатом многолетней работы лучших российских специалистов в
+            области архитектуры и строительства...
+          </p>
+          <div class="staircase">
+            <img src="../data/house1.jpg" alt="Изображение 1" />
+            <img src="../data/house2.jpg" alt="Изображение 2" />
+            <img src="../data/house3.jpg" alt="Изображение 3" />
+            <img src="../data/house4.jpg" alt="Изображение 4" />
+            <img src="../data/house5.jpg" alt="Изображение 5" />
+            <img src="../data/house6.jpg" alt="Изображение 6" />
+            <img src="../data/house7.jpg" alt="Изображение 7" />
+            <img src="../data/house8.jpg" alt="Изображение 8" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
