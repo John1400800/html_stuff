@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Красота природы - Фотогалерея</title>
+
+    <link
+      rel="stylesheet"
+      href="css/lightbox.css"
+      type="text/css"
+      media="screen"
+    />
+
+    <script src="js/prototype.js" type="text/javascript"></script>
+    <script
+      src="js/scriptaculous.js?load=effects,builder"
+      type="text/javascript"
+    ></script>
+    <script src="js/lightbox.js" type="text/javascript"></script>
+
+    <style>
+      body {
+        background-color: #121212;
+        color: #ffffff;
+        font-family: "Roboto", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        background-position: center;
+      }
+
+      header {
+        background-color: #1f1f1f;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 1px solid #333;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2.5em;
+        font-weight: bold;
+      }
+
+      main {
+        padding: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      section {
+        padding: 20px;
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      section h2 {
+        margin: 0 0 20px;
+        font-size: 1.8em;
+        color: #1db954; /* Spotify green */
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+      }
+
+      .gallery a img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+
+      .gallery a img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      p {
+        line-height: 1.8;
+        font-size: 1.1em;
+        color: #b3b3b3; /* Softer text color */
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #1f1f1f;
+        color: #b3b3b3;
+        font-size: 0.9em;
+        border-top: 1px solid #333;
+      }
+
+      #background-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        transition: opacity 3s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="background-overlay"></div>
+    <header>
+      <h1>Красота природы</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Пейзажи</h2>
+        <p>
+          Исследуйте захватывающие дух пейзажи со всего мира. От величественных
+          гор до спокойных пляжей — погрузитесь в красоту природы.
+        </p>
+        <div class="gallery">
+          <a href="images/landscape1.jpeg" rel="lightbox[landscapes]"
+            ><img src="images/landscape1.jpeg" alt="Пейзаж 1"
+          /></a>
+          <a href="images/landscape2.jpeg" rel="lightbox[landscapes]"
+            ><img src="images/landscape2.jpeg" alt="Пейзаж 2"
+          /></a>
+          <a href="images/landscape3.jpeg" rel="lightbox[landscapes]"
+            ><img src="images/landscape3.jpeg" alt="Пейзаж 3"
+          /></a>
+          <a href="images/landscape4.jpeg" rel="lightbox[landscapes]"
+            ><img src="images/landscape4.jpeg" alt="Пейзаж 4"
+          /></a>
+          <a href="images/landscape5.jpeg" rel="lightbox[landscapes]"
+            ><img src="images/landscape5.jpeg" alt="Пейзаж 5"
+          /></a>
+        </div>
+      </section>
+
+      <section>
+        <h2>Дикая природа</h2>
+        <p>
+          Увидьте разнообразие дикой природы, населяющей нашу планету. Эти
+          завораживающие изображения показывают животных больших и малых в их
+          естественной среде обитания.
+        </p>
+        <div class="gallery">
+          <a href="images/wildlife1.jpeg" rel="lightbox[wildlife]"
+            ><img src="images/wildlife1.jpeg" alt="Дикая природа 1"
+          /></a>
+          <a href="images/wildlife2.jpeg" rel="lightbox[wildlife]"
+            ><img src="images/wildlife2.jpeg" alt="Дикая природа 2"
+          /></a>
+          <a href="images/wildlife3.jpeg" rel="lightbox[wildlife]"
+            ><img src="images/wildlife3.jpeg" alt="Дикая природа 3"
+          /></a>
+          <a href="images/wildlife4.jpeg" rel="lightbox[wildlife]"
+            ><img src="images/wildlife4.jpeg" alt="Дикая природа 4"
+          /></a>
+          <a href="images/wildlife5.jpeg" rel="lightbox[wildlife]"
+            ><img src="images/wildlife5.jpeg" alt="Дикая природа 5"
+          /></a>
+        </div>
+      </section>
+
+      <section>
+        <h2>Флора</h2>
+        <p>
+          Откройте для себя яркий мир флоры. От изящных цветов до густых лесов —
+          эти фотографии передают суть растительной жизни.
+        </p>
+        <div class="gallery">
+          <a href="images/flora1.jpg" rel="lightbox[flora]"
+            ><img src="images/flora1.jpg" alt="Флора 1"
+          /></a>
+          <a href="images/flora2.jpg" rel="lightbox[flora]"
+            ><img src="images/flora2.jpg" alt="Флора 2"
+          /></a>
+          <a href="images/flora3.jpg" rel="lightbox[flora]"
+            ><img src="images/flora3.jpg" alt="Флора 3"
+          /></a>
+          <a href="images/flora4.jpg" rel="lightbox[flora]"
+            ><img src="images/flora4.jpg" alt="Флора 4"
+          /></a>
+          <a href="images/flora5.jpg" rel="lightbox[flora]"
+            ><img src="images/flora5.jpg" alt="Флора 5"
+          /></a>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const images = [
+        "images/landscape1.jpeg",
+        "images/landscape2.jpeg",
+        "images/landscape3.jpeg",
+        "images/landscape4.jpeg",
+        "images/landscape5.jpeg",
+        "images/wildlife1.jpeg",
+        "images/wildlife2.jpeg",
+        "images/wildlife3.jpeg",
+        "images/wildlife4.jpeg",
+        "images/wildlife5.jpeg",
+        "images/flora1.jpg",
+        "images/flora2.jpg",
+        "images/flora3.jpg",
+        "images/flora4.jpg",
+        "images/flora5.jpg",
+      ];
+
+      let index = 0;
+      const backgroundOverlay = document.getElementById("background-overlay");
+
+      function changeBackground() {
+        backgroundOverlay.style.opacity = 0;
+        setTimeout(() => {
+          backgroundOverlay.style.backgroundImage = `url(${images[index]})`;
+          backgroundOverlay.style.opacity = 1;
+          index = (index + 1) % images.length;
+        }, 3000); // Match transition duration
+      }
+
+      setInterval(changeBackground, 6000); // Adjust to include transition duration and display time
+      changeBackground();
+    </script>
+  </body>
+</html>
